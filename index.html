@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Sofia" rel="stylesheet"> 
+    <title>Serginho's BarberShop</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="bg-img"></div>
+        <div class="content-wrap">
+            <h1>Serginho's BarberShop</h1>
+            <p>
+                Corte na Régua. O mais chave da Zona Leste.
+            </p> 
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li>
+                    <a href="#main-header">
+                        <img class="menuIcons" src="menuIcons/home.png" alt="Home">
+                        <span class="menuSpan">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sec-a">
+                      <img class="menuIcons" src="menuIcons/sobre.png" alt="Sobre">
+                      <span class="menuSpan">Sobre</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sec-b">
+                        <img class="menuIcons" src="menuIcons/galeria.png" alt="Galeria">
+                        <span class="menuSpan">Galeria</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sec-e">
+                        <img class="menuIcons" src="menuIcons/preco.png" alt="Preços">
+                        <span class="menuSpan">Preços</span>
+                      </a>
+                  </li>
+                <li>
+                  <a href="#sec-c">
+                      <img class="menuIcons" src="menuIcons/contato.png" alt="Contato">
+                      <span class="menuSpan">Contato</span>
+                    </a>
+                </li>
+            </ul>
+            
+        </nav>  
+    </header>
+
+    <main>
+        <section id="sec-a" class="content-wrap"> <!-- Apresentação -->
+            <h2>Uma barbearia para quem tem estilo</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum eum excepturi ducimus odit accusantium labore laboriosam eligendi ut laborum libero, quis voluptatum? Pariatur quis placeat iusto. Dolorum necessitatibus odio, consequuntur sed animi iste doloremque a non accusantium dicta quidem ullam.
+            </p>
+        </section> 
+
+        <section id="sec-b"> <!-- Galeria de Fotos -->
+            <h2>Galeria</h2>
+            <div class="gallery">
+                <img id="img1" src="https://static.pexels.com/photos/897253/pexels-photo-897253.jpeg" alt="Corte 1"/>
+                <img id="img2" src="https://static.pexels.com/photos/897270/pexels-photo-897270.jpeg" alt="Corte 2"/>
+                <img id="img3" src="https://static.pexels.com/photos/897251/pexels-photo-897251.jpeg" alt="Corte 3"/>
+                <div class="video-container">
+                    <iframe id="vd1" width="100%" height="100%" src="https://www.youtube.com/embed/GHKoyKxLPmI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec-e"> <!--Preços -->
+            <h2>Serviços e Preços</h2>
+            <table>
+                <tr>
+                    <td class="prod">Corte</td>
+                    <td class="prec">R$ 25,00</td>
+                </tr>
+                <tr>
+                    <td class="prod">Barba</td>
+                    <td class="prec">R$ 25,00</td>
+                </tr>
+                <tr>
+                    <td class="prod">Sombrancelha</td>
+                    <td class="prec">R$ 15,00</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="sec-c"> <!-- Agende seu Horario -->
+            <div class="bg-booking"></div>
+            <div class="contact">
+                <h2>Agende seu Horário</h2>
+                <div class="locale">
+                        <div id="l1">
+                                <p>Rua Catarina Cubas, xxxx</p>
+                                <p>São Paulo - SP</p>
+                        </div>
+                         <div id="l2">
+                                <p>Fone: +55 11 3333-3333</p>
+                                <p>contato@serginhosbshop.com.br</p>
+                        </div>
+                </div> 
+            </div>
+        </section>
+
+        <section id="sec-d"> <!-- Social Media -->
+            <h3 class="content-wrap">Siga-nos nas redes sociais</h3>
+            <div class="social-networks">
+                <a href="http://www.instagram.com" target="_blanck"><img src="social/insta.png" alt="Instagram"/></a>
+                <a href="http://www.facebook.com" target="_blanck"><img src="social/fb.png" alt="Facebook"/></a>
+                <a href="http://www.twitter.com" target="_blanck"><img src="social/tt.png" alt="Twitter"/></a>
+            </div>
+            <div class="newsletter">
+                <h3 class="content-wrap">Cadastre-se na nossa Newsletter</h3>
+                <p>Inscreva-se na nossa Newsletter e seja o primeiro a saber quando houver <span class="destaque">promoções!</span></p>
+                <form action="/newsletter">
+                    <input type="text" placeholder="Insira seu nome" required>
+                    <input type="email" placeholder="Insira seu email" required>
+                    <button type="submit">Inscreva-se</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div>
+            <p>Serginho's BarberShop</p>
+            <p>Todos os direitos reservados</p>
+        </div>
+        <div>Project by <a href="http://cavernadodev.com" target="_blanck">Lucas Stoller</a></div>
+    </footer>
+</body>
+</html>
